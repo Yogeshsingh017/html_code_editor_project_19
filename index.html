@@ -1,0 +1,103 @@
+<!--created by yogesh singh-->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>html editor</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        textarea {
+            color: green;
+            outline: none;
+            border: 1px solid white;
+            width: 100%;
+            height: 400px;
+            background-color: black;
+        }
+
+        .main {
+            background-color: #6756fb;
+            width: 100%;
+            height: 100px;
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            height: 22px;
+            background-color: #909090;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 2px solid black;
+            margin-top: 29px;
+
+        }
+
+        .run {
+            border-color: lightgreen;
+            background-color: lightgreen;
+            outline: none;
+            border-radius: 2vh;
+        }
+
+        ::placeholder {
+            color: green;
+        }
+
+        .runArea {
+            border: 1ox solid white;
+            background-color: white;
+
+            height: 500px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <center>
+            <h1>Edit your html</h1>
+            <h6>best with me</h6>
+        </center>
+    </div>
+    <div class="container">
+        <center><button class="run" onclick="run()">run</button></center>
+    </div>
+    <textarea id="editor" placeholder="starts the coding from here">
+<html>
+    <head>
+        <title> </title>
+     </head>
+    <body>
+            
+</body>
+</html>
+    </textarea>
+    <div class="container">
+        <center>run area</center>
+    </div>
+    <div class="runArea" id="runArea">
+
+    </div>
+
+
+</body>
+<script>
+    //created by yogesh singh
+    alert("an html code editor, it is also responsive and able to run you html code,😊😊")
+    alert("small code big work 😊😊")
+    alert("if you like then pls upvote me and drop a beautiful comment, love you all guys 😊😊😍😍")
+
+    function run() {
+        var value = document.getElementById('editor').value;
+        document.getElementById('runArea').innerHTML = value;
+    }
+</script>
+
+</html>
